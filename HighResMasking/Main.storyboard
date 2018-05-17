@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kW-eu-G5U">
+                                <rect key="frame" x="16" y="607" width="161" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fe7-wC-tAp"/>
+                                    <constraint firstAttribute="width" constant="161" id="FjF-2J-6F6"/>
+                                    <constraint firstAttribute="width" secondItem="1kW-eu-G5U" secondAttribute="height" multiplier="161:40" id="RhH-iQ-6ev"/>
+                                </constraints>
+                                <state key="normal" title="HighRes masking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="highResButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NP-pc-pIp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-K8-9DE">
+                                <rect key="frame" x="209" y="607" width="150" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7ij-hH-dQe"/>
+                                    <constraint firstAttribute="height" constant="40" id="N46-E7-RtP"/>
+                                    <constraint firstAttribute="width" secondItem="ohV-K8-9DE" secondAttribute="height" multiplier="15:4" id="PVS-0P-FbN"/>
+                                </constraints>
+                                <state key="normal" title="Normal masking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalResButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKt-4v-KBZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pte-6d-ndC" userLabel="Reset">
+                                <rect key="frame" x="16" y="559" width="161" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pte-6d-ndC" secondAttribute="height" multiplier="161:40" id="Ky0-CD-wgW"/>
+                                    <constraint firstAttribute="width" constant="161" id="NNX-zK-w4O"/>
+                                    <constraint firstAttribute="height" constant="40" id="VTT-WB-1vJ"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNN-8q-Mc1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80d-OQ-8KO">
+                                <rect key="frame" x="16" y="479" width="166" height="30"/>
+                                <color key="backgroundColor" red="0.54055354792795984" green="0.17079452442004509" blue="0.64959115932642486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="80d-OQ-8KO" secondAttribute="height" multiplier="83:15" id="9l7-1L-vYI"/>
+                                    <constraint firstAttribute="height" constant="30" id="GZg-8v-ZqE"/>
+                                    <constraint firstAttribute="width" constant="166" id="xwX-Px-ToC"/>
+                                </constraints>
+                                <state key="normal" title="Horizontal Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="horizontalImgBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="141-Zo-4lk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-Yy-nfO">
+                                <rect key="frame" x="16" y="517" width="166" height="30"/>
+                                <color key="backgroundColor" red="0.54055354789999999" green="0.17079452440000001" blue="0.6495911593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IqU-b6-gwp"/>
+                                    <constraint firstAttribute="width" secondItem="fdJ-Yy-nfO" secondAttribute="height" multiplier="83:15" id="Kkl-MJ-53v"/>
+                                    <constraint firstAttribute="width" constant="166" id="NU1-kd-PD4"/>
+                                </constraints>
+                                <state key="normal" title="Vertical Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="verticalImgAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDs-qN-WCc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8J-RI-hQx" userLabel="Save to Gallery">
+                                <rect key="frame" x="209" y="559" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U8J-RI-hQx" secondAttribute="height" multiplier="15:4" id="8ns-mO-bif"/>
+                                    <constraint firstAttribute="width" constant="150" id="Dp8-6E-Jj2"/>
+                                    <constraint firstAttribute="height" constant="40" id="fR1-gx-xsO"/>
+                                </constraints>
+                                <state key="normal" title="Save to gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Esi-Fw-cR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAB-ur-8BU" userLabel="Another vertical Image">
+                                <rect key="frame" x="16" y="441" width="166" height="30"/>
+                                <color key="backgroundColor" red="0.54055354789999999" green="0.17079452440000001" blue="0.6495911593" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7cX-NK-E9L"/>
+                                    <constraint firstAttribute="width" constant="166" id="YvD-IQ-dOM"/>
+                                    <constraint firstAttribute="width" secondItem="CAB-ur-8BU" secondAttribute="height" multiplier="83:15" id="ePJ-ry-opt"/>
+                                </constraints>
+                                <state key="normal" title="Another vertical Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="anotherVerticalImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cUE-0o-OJF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="80d-OQ-8KO" firstAttribute="height" secondItem="CAB-ur-8BU" secondAttribute="height" id="03Z-Z3-2jB"/>
+                            <constraint firstItem="80d-OQ-8KO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Hf-kZ-dwd"/>
+                            <constraint firstItem="ohV-K8-9DE" firstAttribute="top" secondItem="U8J-RI-hQx" secondAttribute="bottom" constant="8" id="B34-WM-lbI"/>
+                            <constraint firstItem="fdJ-Yy-nfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CKN-Jf-592"/>
+                            <constraint firstItem="80d-OQ-8KO" firstAttribute="width" secondItem="CAB-ur-8BU" secondAttribute="width" id="Fgj-p0-TRO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1kW-eu-G5U" secondAttribute="bottom" constant="20" id="K1n-7r-IAj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ohV-K8-9DE" secondAttribute="trailing" constant="16" id="QWa-cC-d9m"/>
+                            <constraint firstItem="fdJ-Yy-nfO" firstAttribute="top" secondItem="80d-OQ-8KO" secondAttribute="bottom" constant="8" id="QYO-cm-ALS"/>
+                            <constraint firstItem="1kW-eu-G5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qhq-hL-wNM"/>
+                            <constraint firstItem="pte-6d-ndC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qwg-gP-FGK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8J-RI-hQx" secondAttribute="trailing" constant="16" id="T6u-Da-V4x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ohV-K8-9DE" secondAttribute="bottom" constant="20" id="ViS-Dp-FW8"/>
+                            <constraint firstItem="fdJ-Yy-nfO" firstAttribute="leading" secondItem="CAB-ur-8BU" secondAttribute="leading" id="bli-qf-0w5"/>
+                            <constraint firstItem="1kW-eu-G5U" firstAttribute="top" secondItem="pte-6d-ndC" secondAttribute="bottom" constant="8" id="eEX-yY-Xsk"/>
+                            <constraint firstItem="fdJ-Yy-nfO" firstAttribute="height" secondItem="CAB-ur-8BU" secondAttribute="height" id="hDT-TW-KDT"/>
+                            <constraint firstItem="CAB-ur-8BU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hLe-kQ-9uq"/>
+                            <constraint firstItem="80d-OQ-8KO" firstAttribute="leading" secondItem="CAB-ur-8BU" secondAttribute="leading" id="nWp-vE-Qbw"/>
+                            <constraint firstItem="fdJ-Yy-nfO" firstAttribute="width" secondItem="CAB-ur-8BU" secondAttribute="width" id="pel-Uu-AjI"/>
+                            <constraint firstItem="80d-OQ-8KO" firstAttribute="top" secondItem="CAB-ur-8BU" secondAttribute="bottom" constant="8" id="tQi-Tl-MBv"/>
+                            <constraint firstItem="pte-6d-ndC" firstAttribute="top" secondItem="fdJ-Yy-nfO" secondAttribute="bottom" constant="12" id="z2D-j1-Ndb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="highResBtnOutlet" destination="1kW-eu-G5U" id="Acf-4m-sLM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
